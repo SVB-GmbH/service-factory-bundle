@@ -12,7 +12,6 @@ use Symfony\Component\ErrorHandler\Error\ClassNotFoundError;
 
 class ServiceFactoryCompilerPass implements CompilerPassInterface
 {
-
     public function process(ContainerBuilder $container)
     {
         $serviceDefinitions = $container->getDefinitions();

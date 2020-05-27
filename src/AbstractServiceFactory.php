@@ -5,7 +5,7 @@ namespace SVB\ServiceFactoryBundle;
 abstract class AbstractServiceFactory implements ServiceFactoryInterface
 {
     /** @var FactoryServiceInterface[] */
-    protected array $services;
+    protected $services;
 
     public function addService(FactoryServiceInterface $service): ServiceFactoryInterface
     {

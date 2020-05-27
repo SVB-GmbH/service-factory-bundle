@@ -14,6 +14,6 @@ class ServiceFactoryContainerExtension extends Extension
 
     public function load(array $configs, ContainerBuilder $container)
     {
-        // TODO: Implement load() method.
+        // No configuration needed
     }
 }
