@@ -1,6 +1,7 @@
 {
     "name": "svb/service-factory-bundle",
     "description": "Convenient way to automatically inject services into a factory without using sf service tagging.",
+    "version": "1.0.0",
     "type": "symfony-bundle",
     "require": {
         "php": "^7.3.0",
