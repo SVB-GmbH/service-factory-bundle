@@ -4,7 +4,7 @@
     "version": "1.0.0",
     "type": "symfony-bundle",
     "require": {
-        "php": "^7.0.0",
+        "php": "^7.1",
         "symfony/framework-bundle": ">3.0.0"
     },
     "license": "MIT",
@@ -17,6 +17,11 @@
     "autoload": {
         "psr-4": {
             "SVB\\ServiceFactoryBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-0": {
+            "SVB\\ServiceFactoryBundle\\": "tests/"
         }
     }
 }

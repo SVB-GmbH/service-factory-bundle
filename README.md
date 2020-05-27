@@ -42,3 +42,6 @@ class TestFactory extends AbstractServiceFactory
     }
 }
 ```
+
+## Continuous integration
+Execute unit tests: `./phpunit --coverage-html coverage`
