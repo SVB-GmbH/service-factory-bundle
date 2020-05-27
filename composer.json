@@ -1,0 +1,21 @@
+{
+    "name": "svb/service-factory-bundle",
+    "description": "Convenient way to automatically inject services into a factory without using sf service tagging.",
+    "type": "symfony-bundle",
+    "require": {
+        "php": "^7.3.0",
+        "symfony/framework-bundle": ">3.0.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Patrick Siemen",
+            "email": "post@patrick-siemen.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SVB\\ServiceFactoryBundle\\": "src/"
+        }
+    }
+}
