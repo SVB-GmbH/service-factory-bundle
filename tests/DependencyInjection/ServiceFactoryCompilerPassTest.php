@@ -92,7 +92,7 @@ namespace SVB\ServiceFactoryBundle\DependencyInjection {
             $containerMock
                 ->expects($this->once())
                 ->method('findDefinition')
-                ->with('\\test1')
+                ->with('test1')
                 ->willReturn($factoryDefinitionMock)
             ;
             $factoryDefinitionMock
@@ -123,10 +123,10 @@ namespace SVB\ServiceFactoryBundle\DependencyInjection {
             $containerMock
                 ->expects($this->once())
                 ->method('findDefinition')
-                ->with('\\test1')
+                ->with('test1')
                 ->willThrowException(new ServiceNotFoundException('test'))
             ;
-            $factoryDefinition = new Definition('\\test1');
+            $factoryDefinition = new Definition('test1');
             $factoryDefinition
                 ->setPrivate(true)
                 ->setAutoconfigured(true)

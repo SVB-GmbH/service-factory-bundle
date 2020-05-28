@@ -31,17 +31,16 @@ class ServiceFactoryCompilerPass implements CompilerPassInterface
                 continue;
             }
 
-            $factoryClass =  '\\' . $serviceClass::getFactoryServiceId();
             try {
                 $container
-                    ->findDefinition($factoryClass)
+                    ->findDefinition($serviceClass::getFactoryServiceId())
                     ->addMethodCall(
                         'addService',
                         [new Reference($serviceDefinition->getClass())]
                     )
                 ;
             } catch (ServiceNotFoundException $exception) {
-                $factoryDefinition = new Definition($factoryClass);
+                $factoryDefinition = new Definition($serviceClass::getFactoryServiceId());
                 $factoryDefinition
                     ->setPrivate(true)
                     ->setAutoconfigured(true)
