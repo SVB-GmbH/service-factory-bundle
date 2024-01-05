@@ -7,7 +7,7 @@ use Symfony\Component\DependencyInjection\Extension\Extension;
 
 class ServiceFactoryContainerExtension extends Extension
 {
-    public function getAlias()
+    public function getAlias(): string
     {
         return 'svb_service_factory_bundle';
     }
