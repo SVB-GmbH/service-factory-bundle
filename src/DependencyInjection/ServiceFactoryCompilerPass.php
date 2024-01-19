@@ -27,7 +27,7 @@ class ServiceFactoryCompilerPass implements CompilerPassInterface
                 if (!is_subclass_of($serviceClass, FactoryServiceInterface::class)) {
                     continue;
                 }
-            } catch (ClassNotFoundError $exception) {
+            } catch (\Throwable $exception) {
                 continue;
             }
 
