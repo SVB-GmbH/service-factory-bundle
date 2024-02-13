@@ -12,7 +12,7 @@ class ServiceFactoryContainerExtension extends Extension
         return 'svb_service_factory_bundle';
     }
 
-    public function load(array $configs, ContainerBuilder $container)
+    public function load(array $configs, ContainerBuilder $container): void
     {
         // No configuration needed
     }
